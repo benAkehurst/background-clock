@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Quicksand", sans-serif;
+  font-size: 3rem;
+  transition: 0.5s;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-self: center;
+  color: #fff;
+  padding: 3rem;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 300;
+}

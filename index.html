@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Clock Colours</title>
+    <link href="./style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+        <section>
+                <h1 id="clock"></h1>
+        </section>
+    </main>
+  </body>
+  <script>
+    setInterval(() => {
+      let hex = "#" + new Date().toISOString().substr(11, 8).replace(/:/g, "");
+      document.querySelector("#clock").innerHTML = hex;
+      document.body.style.backgroundColor = hex;
+    }, 500);
+  </script>
+</html>
